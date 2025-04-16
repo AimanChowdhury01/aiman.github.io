@@ -38,7 +38,8 @@
       padding: 2rem;
       color: #6b7280;
     }
-    .main-container {
+
+    .container {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -46,16 +47,19 @@
       margin: 2rem auto;
       padding: 0 20px;
     }
-    .content {
-      flex: 2;
-      max-width: 700px;
-    }
-    .sidebar {
-      flex: 1;
+
+    .left-sidebar,
+    .right-sidebar {
+      width: 20%;
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
+
+    .content {
+      width: 55%;
+    }
+
     .card {
       background-color: white;
       border-radius: 10px;
@@ -63,20 +67,24 @@
       text-align: center;
       overflow: hidden;
     }
+
     .card img {
       width: 100%;
       height: auto;
       max-height: 220px;
       object-fit: cover;
     }
-    .card p {
-      font-size: 14px;
-      padding: 0 10px 10px;
-    }
+
     .card-title {
       font-weight: bold;
       margin: 10px 0 5px;
     }
+
+    .card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+
     ul {
       list-style-type: disc;
       padding-left: 1.5rem;
@@ -89,35 +97,39 @@
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
-  <div class="main-container">
+  <div class="container">
+    <!-- Left Sidebar (Man of the Match) -->
+    <div class="left-sidebar">
+      <div class="card">
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
+        <p class="card-title">🥇 Man of the Match – CBFC League</p>
+        <p>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Also won the same tournament in 2024.</p>
+      </div>
+    </div>
+
     <!-- Main Content -->
     <div class="content">
       <h2>📂 Projects</h2>
-
       <div>
         <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
         <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
       </div>
-
       <div>
         <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
         <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
       </div>
 
       <h2>📄 Research Papers</h2>
-
       <div>
         <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
         <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
       </div>
-
       <div>
         <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
         <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
       </div>
 
       <h2>🏅 Extracurricular Activities</h2>
-
       <ul>
         <li>⚽ Regularly play soccer representing Bengali Students Society at UCalgary in soccer events hosted on campus. Also served as captain of the UCalgary intramural team that finished second in 2024.</li>
         <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
@@ -125,13 +137,8 @@
       </ul>
     </div>
 
-    <!-- Sidebar with Images -->
-    <div class="sidebar">
-      <div class="card">
-        <img src="assets/SoccerMotm.jpg" alt="Man of the Match – Soccer" />
-        <p class="card-title">🥇 Man of the Match – CBFC League</p>
-        <p>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Also won the same tournament in 2024.</p>
-      </div>
+    <!-- Right Sidebar (VP & Asia Cup) -->
+    <div class="right-sidebar">
       <div class="card">
         <img src="assets/VPInternal.png" alt="VP Internal" />
         <p class="card-title">📘 Vice President of Internal Affairs</p>
@@ -150,5 +157,6 @@
   </footer>
 </body>
 </html>
+
 
 
