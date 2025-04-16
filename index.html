@@ -38,39 +38,44 @@
       padding: 2rem;
       color: #6b7280;
     }
-    .centered-section {
-      max-width: 1000px;
-      margin: 0 auto;
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 2rem auto;
       padding: 0 20px;
     }
-    .highlight-row {
+    .content {
+      flex: 2;
+      max-width: 700px;
+    }
+    .sidebar {
+      flex: 1;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 2rem;
     }
     .card {
       background-color: white;
-      border-radius: 12px;
+      border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      width: 300px;
-      overflow: hidden;
       text-align: center;
+      overflow: hidden;
     }
     .card img {
       width: 100%;
       height: auto;
-      display: block;
+      max-height: 220px;
+      object-fit: cover;
     }
     .card p {
-      padding: 0 1rem 1rem;
       font-size: 14px;
-      color: #111827;
+      padding: 0 10px 10px;
     }
     .card-title {
       font-weight: bold;
-      margin: 1rem 0 0.5rem;
+      margin: 10px 0 5px;
     }
     ul {
       list-style-type: disc;
@@ -84,58 +89,60 @@
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
-  <div class="centered-section">
-    <div class="highlight-row">
+  <div class="main-container">
+    <!-- Main Content -->
+    <div class="content">
+      <h2>📂 Projects</h2>
+
+      <div>
+        <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
+        <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
+      </div>
+
+      <div>
+        <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
+        <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
+      </div>
+
+      <h2>📄 Research Papers</h2>
+
+      <div>
+        <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
+        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
+      </div>
+
+      <div>
+        <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
+        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
+      </div>
+
+      <h2>🏅 Extracurricular Activities</h2>
+
+      <ul>
+        <li>⚽ Regularly play soccer representing Bengali Students Society at UCalgary in soccer events hosted on campus. Also served as captain of the UCalgary intramural team that finished second in 2024.</li>
+        <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
+        <li>📢 Vice President of Internal Affairs – BSS UCalgary: Led internal affairs for the Bengali Students Society at UCalgary, managing team coordination, organizing events, streamlining communication, and enhancing involvement across the student body.</li>
+      </ul>
+    </div>
+
+    <!-- Sidebar with Images -->
+    <div class="sidebar">
       <div class="card">
-        <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match – Soccer" />
         <p class="card-title">🥇 Man of the Match – CBFC League</p>
         <p>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Also won the same tournament in 2024.</p>
       </div>
-
       <div class="card">
         <img src="assets/VPInternal.png" alt="VP Internal" />
         <p class="card-title">📘 Vice President of Internal Affairs</p>
         <p>Led internal operations for the Bengali Students Society at UCalgary in 2024–25.</p>
       </div>
-
       <div class="card">
         <img src="assets/BSS Cricket.png" alt="Asia Cup Jersey" />
         <p class="card-title">🏏 Asia Cup Cricket 2024</p>
         <p>Collecting Asia Cup jersey 2024 from sponsor Shampan.</p>
       </div>
     </div>
-
-    <h2>📂 Projects</h2>
-
-    <div>
-      <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
-      <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
-    </div>
-
-    <div>
-      <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
-      <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
-    </div>
-
-    <h2>📄 Research Papers</h2>
-
-    <div>
-      <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
-      <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
-    </div>
-
-    <div>
-      <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
-      <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
-    </div>
-
-    <h2>🏅 Extracurricular Activities</h2>
-
-    <ul>
-      <li>⚽ Regularly play soccer representing Bengali Students Society at UCalgary in soccer events hosted at UCalgary. Also served as captain of the intramural team that finished second in 2024.</li>
-      <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
-      <li>📢 Vice President of Internal Affairs – BSS UCalgary: Led internal affairs for the Bengali Students Society at UCalgary, managing team coordination, organizing events, streamlining communication, and enhancing involvement across the student body.</li>
-    </ul>
   </div>
 
   <footer>
@@ -143,4 +150,5 @@
   </footer>
 </body>
 </html>
+
 
