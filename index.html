@@ -20,22 +20,11 @@
     h1 {
       margin: 0;
     }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
     h2 {
       color: #111827;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 0.75rem 0;
+      margin-top: 2rem;
     }
     a {
       text-decoration: none;
@@ -49,6 +38,35 @@
       padding: 2rem;
       color: #6b7280;
     }
+    .centered-section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .right-highlight {
+      position: fixed;
+      right: 20px;
+      top: 160px;
+      width: 250px;
+      z-index: 10;
+    }
+    .right-highlight img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    .right-highlight .card {
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .right-highlight p {
+      font-size: 13px;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -57,35 +75,46 @@
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
-  <div class="container">
+  <div class="centered-section">
     <h2>📂 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/AimanChowdhury01/Project-Portfolio/tree/main/FinPal" target="_blank">FinPal – Personal Finance Manager (Java)</a></li>
-      <li><a href="https://github.com/AimanChowdhury01/Project-Portfolio/tree/main/MyPassword" target="_blank">MyPassword – Encrypted Password Manager (Java)</a></li>
-    </ul>
+
+    <div style="margin-bottom: 30px;">
+      <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
+      <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
+    </div>
+
+    <div>
+      <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
+      <p>A Java GUI application using JavaFX and SceneBuilder to manage income, expenses, and budgeting. Built to support students and individuals with clean dashboards and smart summaries.</p>
+    </div>
 
     <h2>📄 Research Papers</h2>
-    <ul>
+    <ul style="list-style: none; padding: 0;">
       <li><a href="https://github.com/AimanChowdhury01/Project-Portfolio/blob/main/EV-vs-AQI/Final_Report_EV_AQI.pdf" target="_blank">EV Adoption & Air Quality in WA – Final Report (PDF)</a></li>
       <li><a href="https://github.com/AimanChowdhury01/Project-Portfolio/blob/main/Muon-Deflection/Cosmic_Muon_Paper.pdf" target="_blank">Cosmic Muon Deflection under Magnetic Field (PDF)</a></li>
     </ul>
+  </div>
 
-    <h2>🌟 Highlights Gallery</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 40px;">
-      <div style="flex: 1; min-width: 250px; max-width: 300px;">
-        <img src="assets/SoccerMotm.jpg" alt="Man of the Match Soccer" style="width: 100%; border-radius: 10px;" />
-        <p><strong>🏅 Man of the Match – CBFC League</strong><br>“Manual” Neuer Aiman Nawar Chowdhury</p>
-      </div>
+  <!-- Fixed Right Sidebar for Highlights -->
+  <div class="right-highlight">
+    <div class="card">
+      <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
+      <p>
+        <strong>🥇 Man of the Match – CBFC League</strong><br>
+        Awarded in the Calgary Bangladesh Football Community tournament.<br>
+        🏃‍♂️ Led UCalgary Intramural team to the finals (Runner-up).<br>
+        🌍 Regularly represent the Bengali Students Society in the Egyptian Students Association World Cup and other campus tournaments annually.
+      </p>
+    </div>
 
-      <div style="flex: 1; min-width: 250px; max-width: 300px;">
-        <img src="assets/VPInternal.png" alt="VP Internal BSS" style="width: 100%; border-radius: 10px;" />
-        <p><strong>VP Internal – BSS UCalgary</strong><br>Featured in BSS Internal Excellence Campaign</p>
-      </div>
+    <div class="card">
+      <img src="assets/VPInternal.png" alt="VP Internal BSS" />
+      <p><strong>👔 VP – BSS UCalgary</strong><br>Led BSS internal ops and featured in Internal Excellence campaign</p>
+    </div>
 
-      <div style="flex: 1; min-width: 250px; max-width: 300px;">
-        <img src="assets/BSS Cricket.png" alt="Asia Cup Jersey Sponsorship" style="width: 100%; border-radius: 10px;" />
-        <p><strong>Asia Cup 2024</strong><br>Jersey #33 Sponsored by Shampan</p>
-      </div>
+    <div class="card">
+      <img src="assets/BSS Cricket.png" alt="Asia Cup Jersey" />
+      <p><strong>🏏 Asia Cup 2024</strong><br>Represented UCalgary and received Jersey #33 sponsored by Shampan</p>
     </div>
   </div>
 
@@ -94,4 +123,3 @@
   </footer>
 </body>
 </html>
-
