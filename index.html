@@ -11,56 +11,82 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #1f2937;
       color: #ffffff;
       padding: 2rem;
       text-align: center;
     }
-    .main {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 2rem;
-      gap: 2rem;
+
+    h1 {
+      margin: 0;
     }
-    .card {
-      width: 240px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      font-size: 14px;
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-    .card p {
-      margin: 0.5rem 1rem 1rem;
-    }
-    .content {
-      max-width: 600px;
-      flex: 1;
-    }
+
     h2 {
-      margin-top: 2rem;
-      border-bottom: 1px solid #ddd;
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
       padding-bottom: 0.5rem;
+      margin-top: 2rem;
     }
-    h3 {
-      margin-bottom: 0.25rem;
-    }
+
     a {
-      color: #2563eb;
       text-decoration: none;
+      color: #2563eb;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .side-column,
+    .main-column {
+      flex: 1;
+    }
+
+    .main-column {
+      flex: 2;
+      max-width: 700px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card p {
+      font-size: 13px;
+      margin-top: 0.5rem;
+    }
+
     ul {
-      padding-left: 1.25rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
     }
   </style>
 </head>
@@ -70,46 +96,72 @@
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
-  <div class="main">
-
-    <div class="card">
-      <img src="assets/MOTM.png" alt="Man of the Match">
-      <p><strong>🏅 Man of the Match – CBFC League</strong><br>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Won the tournament in 2024.</p>
+  <div class="container">
+    <!-- Left Column -->
+    <div class="side-column">
+      <div class="card">
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match">
+        <p>🏅 <strong>Man of the Match – CBFC League</strong><br>
+          Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Won the tournament in 2024.
+        </p>
+      </div>
     </div>
 
-    <div class="content">
+    <!-- Center Column -->
+    <div class="main-column">
       <h2>📂 Projects</h2>
-      <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
-      <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
 
-      <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
-      <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
+      <div style="margin-bottom: 30px;">
+        <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
+        <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
+        <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
+      </div>
 
       <h2>📄 Research Papers</h2>
-      <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
-      <p>Arduino-based project on Cosmic muon deflection using magnetic fields. Included data collection, theory testing, and experimental physics modeling for Physics 397 research paper. Used MATLAB and Excel for analysis.</p>
 
-      <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
-      <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
+      <div style="margin-bottom: 20px;">
+        <h3>🚀 <a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
+        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <h3>🌱 <a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
+        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Included cleaning, exploratory analysis, ANOVA testing, and environmental impact evaluation.</p>
+      </div>
 
       <h2>🏅 Extracurricular Activities</h2>
       <ul>
         <li>🌍 Regularly play for Bengali Students Society in ESA World Cup and UCalgary tournaments</li>
         <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
-        <li>📢 VP Internal – BSS UCalgary: internal logistics, communications, and student support</li>
+        <li>📢 Vice President of Internal Affairs – Bengali Students Society (BSS) UCalgary: Oversaw internal communications, coordinated event logistics, facilitated team operations, and supported student engagement within the society.</li>
       </ul>
     </div>
 
-    <div class="card">
-      <img src="assets/VPInternal.png" alt="VP Internal BSS">
-      <p><strong>📘 Vice President of Internal Affairs 2024–25</strong></p>
-    </div>
+    <!-- Right Column -->
+    <div class="side-column">
+      <div class="card">
+        <img src="assets/VPInternal.png" alt="VP Internal">
+        <p>📘 <strong>VP Internal 2024–25</strong></p>
+      </div>
 
-    <div class="card">
-      <img src="assets/AsiaCup.png" alt="Asia Cup Cricket Jersey">
-      <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Collecting Asia Cup jersey 2024 from sponsor. </p>
+      <div class="card">
+        <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket Jersey">
+        <p>🏏 <strong>Asia Cup Cricket 2024</strong><br>
+          Collecting Asia Cup jersey 2024 from sponsor. Represented Bengali Students Society at UCalgary. Jersey #33 sponsored by Shampan.
+        </p>
+      </div>
     </div>
   </div>
+
+  <footer>
+    <p>© 2025 Aiman Chowdhury. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
   <footer style="text-align:center; color:#777; padding:1rem 0;">
     © 2025 Aiman Chowdhury. All rights reserved.
