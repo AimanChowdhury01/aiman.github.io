@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aiman Nawar Chowdhury</title>
+  <title>Aiman's Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -11,78 +11,78 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #1f2937;
       color: #ffffff;
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
       margin: 0;
     }
+
     h2 {
       color: #111827;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 0.5rem;
       margin-top: 2rem;
     }
+
     a {
       text-decoration: none;
       color: #2563eb;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
       color: #6b7280;
     }
+
     .main-container {
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 20px;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem;
-      flex-wrap: wrap;
     }
+
+    .card-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 2rem;
+    }
+
     .card {
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
-      width: 300px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      width: 280px;
       text-align: center;
     }
+
     .card img {
       width: 100%;
-      height: auto;
-      max-height: 350px;
-      object-fit: cover;
-      border-bottom: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
     }
-    .card p {
-      padding: 10px;
-      font-size: 14px;
-      margin: 0;
-    }
-    .content-section {
-      max-width: 720px;
-      flex: 1;
-    }
-    .content-section ul {
-      list-style-type: disc;
+
+    .centered-section {
+      max-width: 900px;
+      width: 100%;
       text-align: left;
-      padding-left: 20px;
     }
-    .content-section li {
-      margin-bottom: 8px;
-    }
-    @media (max-width: 768px) {
-      .main-container {
-        flex-direction: column;
-        align-items: center;
-      }
+
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
@@ -93,53 +93,56 @@
   </header>
 
   <div class="main-container">
-    <!-- Left Image Card -->
-    <div class="card">
-      <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
-      <p><strong>🥇 Man of the Match – CBFC League</strong><br>Named Man of the Match at the Calgary Bangladesh Football Community Outdoor tournament. Led team to victory in the 2024 championship.</p>
+    <div class="card-gallery">
+      <div class="card">
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match – CBFC League" />
+        <p><strong>🏅 Man of the Match – CBFC League</strong><br>
+        Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Also won the same tournament in 2024.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/VPInternal.png" alt="Vice President of Internal Affairs" />
+        <p><strong>📘 Vice President of Internal Affairs</strong><br>
+        Led internal operations for the Bengali Students Society at UCalgary in 2024–25.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket 2024" />
+        <p><strong>🏏 Asia Cup Cricket 2024</strong><br>
+        Collecting Asia Cup jersey 2024 from sponsor Shampan.</p>
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="content-section">
+    <div class="centered-section">
       <h2>📂 Projects</h2>
-      <div>
+      <div style="margin-bottom: 30px;">
         <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
         <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
       </div>
 
-      <div>
+      <div style="margin-bottom: 30px;">
         <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
         <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
       </div>
 
       <h2>📄 Research Papers</h2>
-      <div>
+
+      <div style="margin-bottom: 20px;">
         <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
-        <p>Arduino-based project on Cosmic muon deflection using magnetic fields. Included data collection, theory testing, and experimental physics modeling for Physics 397 research paper. Used MATLAB and Excel for analysis.</p>
+        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
       </div>
 
-      <div>
+      <div style="margin-bottom: 20px;">
         <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
-        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
+        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Included cleaning, exploratory analysis, ANOVA testing, and environmental impact evaluation.</p>
       </div>
 
       <h2>🏅 Extracurricular Activities</h2>
       <ul>
-        <li>⚽ Regularly play for Bengali Students Society in ESA World Cup and UCalgary tournaments</li>
+        <li>🌍 Regularly play for Bengali Students Society in ESA World Cup and UCalgary tournaments</li>
         <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
-        <li>📢 Vice President of Internal Affairs – BSS UCalgary: Led internal affairs for the Bengali Students Society at UCalgary, managing team coordination, organizing events, streamlining communication, and enhancing involvement across the student body.</li>
+        <li>📢 Vice President of Internal Affairs – Bengali Students Society (BSS) UCalgary: Oversaw internal communications, coordinated event logistics, facilitated team operations, and supported student engagement within the society.</li>
       </ul>
-    </div>
-
-    <!-- Right Image Cards -->
-    <div class="card">
-      <img src="assets/VPInternal.png" alt="VP Internal 2024–25" />
-      <p><strong>📘 Vice President of Internal Affairs 2024–25</strong><br>Captured from BSS team photo campaign.</p>
-    </div>
-
-    <div class="card">
-      <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket Jersey" />
-      <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Collecting Asia Cup jersey 2024 from sponsor Sampan.</p>
     </div>
   </div>
 
@@ -148,3 +151,4 @@
   </footer>
 </body>
 </html>
+
