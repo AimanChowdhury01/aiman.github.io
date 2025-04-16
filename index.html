@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aiman's Portfolio</title>
   <style>
     body {
@@ -19,31 +19,29 @@
     }
     .main {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
+      justify-content: space-around;
       flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
     }
-    .side-card {
+    .card {
       width: 240px;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       overflow: hidden;
+      text-align: center;
       font-size: 14px;
     }
-    .side-card img {
+    .card img {
       width: 100%;
       height: auto;
-      display: block;
     }
-    .side-card p {
-      padding: 0.5rem 1rem 1rem;
-      margin: 0;
-      text-align: center;
+    .card p {
+      margin: 0.5rem 1rem 1rem;
     }
     .content {
-      max-width: 700px;
+      max-width: 600px;
       flex: 1;
     }
     h2 {
@@ -74,16 +72,13 @@
 
   <div class="main">
 
-    <!-- Left image card -->
-    <div class="side-card">
-      <img src="assets/AsiaCup.png" alt="Asia Cup Cricket Jersey">
-      <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Collecting Asia Cup jersey 2024 from sponsor. Represented Bengali Students Society at UCalgary. Jersey #33 sponsored by Shampan.</p>
+    <div class="card">
+      <img src="assets/MOTM.png" alt="Man of the Match">
+      <p><strong>🏅 Man of the Match – CBFC League</strong><br>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Won the tournament in 2024.</p>
     </div>
 
-    <!-- Central content -->
     <div class="content">
       <h2>📂 Projects</h2>
-
       <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
       <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
 
@@ -91,12 +86,11 @@
       <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
 
       <h2>📄 Research Papers</h2>
-
-      <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">☄️ Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
-      <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
+      <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
+      <p>Arduino-based project on Cosmic muon deflection using magnetic fields. Included data collection, theory testing, and experimental physics modeling for Physics 397 research paper. Used MATLAB and Excel for analysis.</p>
 
       <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
-      <p>Studied how EV adoption affects PM2.5 levels in Washington using R-based data visualization and regression. Included cleaning, exploratory analysis, ANOVA testing, and environmental impact evaluation.</p>
+      <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
 
       <h2>🏅 Extracurricular Activities</h2>
       <ul>
@@ -106,17 +100,15 @@
       </ul>
     </div>
 
-    <!-- Right image cards -->
-    <div class="side-card">
-      <img src="assets/MOTM.png" alt="Man of the Match">
-      <p><strong>🏅 Man of the Match – CBFC League</strong><br>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Won the tournament in 2024.</p>
-    </div>
-
-    <div class="side-card">
+    <div class="card">
       <img src="assets/VPInternal.png" alt="VP Internal BSS">
-      <p><strong>📘 VP Internal 2024–25</strong></p>
+      <p><strong>📘 Vice President of Internal Affairs 2024–25</strong></p>
     </div>
 
+    <div class="card">
+      <img src="assets/AsiaCup.png" alt="Asia Cup Cricket Jersey">
+      <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Collecting Asia Cup jersey 2024 from sponsor. </p>
+    </div>
   </div>
 
   <footer style="text-align:center; color:#777; padding:1rem 0;">
