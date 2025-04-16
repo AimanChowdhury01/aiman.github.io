@@ -11,150 +11,127 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #1f2937;
       color: #ffffff;
       padding: 2rem;
       text-align: center;
     }
-
     h1 {
       margin: 0;
     }
-
     h2 {
       color: #111827;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 0.5rem;
       margin-top: 2rem;
     }
-
     a {
       text-decoration: none;
       color: #2563eb;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     footer {
       text-align: center;
       padding: 2rem;
       color: #6b7280;
     }
-
     .container {
       display: flex;
       justify-content: center;
-      gap: 2rem;
       padding: 2rem;
-      flex-wrap: wrap;
+      gap: 2rem;
     }
-
-    .main-content {
-      flex: 2;
-      max-width: 700px;
-      min-width: 300px;
+    .left-col, .right-col {
+      width: 250px;
     }
-
-    .side-column {
-      flex: 1;
-      min-width: 250px;
-    }
-
     .card {
-      background-color: #ffffff;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
       border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
       overflow: hidden;
-      margin-bottom: 1rem;
-      text-align: center;
-      font-size: 14px;
     }
-
     .card img {
       width: 100%;
-      display: block;
+      height: auto;
     }
-
     .card p {
       padding: 0.5rem;
+      font-size: 13px;
+      margin: 0;
     }
-
+    .main {
+      max-width: 800px;
+    }
+    .main h2 {
+      margin-top: 1rem;
+    }
     ul {
-      padding-left: 1.2rem;
       text-align: left;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Aiman Nawar Chowdhury</h1>
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
   <div class="container">
-    <!-- Left Sidebar -->
-    <div class="side-column">
+    
+    <!-- Left Column -->
+    <div class="left-col">
       <div class="card">
-        <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket" />
-        <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Represented Bengali Students Society at UCalgary. Jersey #33 sponsored by Shampan.</p>
+        <img src="assets/BSS Cricket.png" alt="Asia Cup 2024">
+        <p>🥢 <strong>Asia Cup Cricket 2024</strong><br>Collecting Asia Cup jersey 2024 from sponsor. Represented Bengali Students Society at UCalgary. Jersey #33 sponsored by Shampan.</p>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Main Section -->
+    <div class="main">
       <h2>📂 Projects</h2>
-      <div>
-        <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
-        <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
-      </div>
+      <p><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank"><strong>MyPassword – Encrypted Password Manager</strong></a><br>
+      A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
 
-      <div style="margin-top: 20px;">
-        <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
-        <p>A Java GUI application using JavaFX and SceneBuilder to manage income, expenses, and budgeting. Built to support students and individuals with clean dashboards and smart summaries.</p>
-      </div>
+      <p><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank"><strong>FinPal – Personal Finance Manager</strong></a><br>
+      A Java application using manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
 
       <h2>📄 Research Papers</h2>
-      <div>
-        <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">☄️ Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
-        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights.</p>
-      </div>
+      <p><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=sharing" target="_blank"><strong>☄️ Cosmic Muon Deflection using Magnetic Fields – PDF</strong></a><br>
+      Arduino-based project on Cosmic muon deflection using magnetic fields. Included data collection, theory testing, and experimental physics modeling for Physics 397 research paper. Used MATLAB and Excel for analysis. Also collected data manually and performed ANOVA test.</p>
 
-      <div style="margin-top: 20px;">
-        <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
-        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset.</p>
-      </div>
+      <p><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=sharing" target="_blank"><strong>🌱 EV Adoption & Air Quality in Washington – PDF, R Code, Dataset</strong></a><br>
+      Studied how EV adoption affects PM2.5 levels in Washington using R-based data visualization and regression. Included cleaning, exploratory analysis, and environmental impact.</p>
 
       <h2>🏅 Extracurricular Activities</h2>
       <ul>
-        <li>⚽ Regularly play for Bengali Students Society in ESA World Cup and UCalgary tournaments</li>
-        <li>🏏 Represent BSS in Asia Cup Cricket tournament at UCalgary</li>
-        <li>📢 VP Internal – BSS UCalgary: internal logistics, comms, student support</li>
+        <li>🌍 Regularly play for Bengali Students Society in ESA World Cup and UCalgary tournaments</li>
+        <li>🥢 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
+        <li>📢 VP Internal – Bengali Students Society UCalgary: coordinated internal affairs, logistics, student support, and communications for events and tournaments</li>
       </ul>
     </div>
 
-    <!-- Right Sidebar -->
-    <div class="side-column">
+    <!-- Right Column -->
+    <div class="right-col">
       <div class="card">
-        <img src="assets/SoccerMotm.jpg" alt="Soccer Award" />
-        <p><strong>🥇 Man of the Match – CBFC League</strong><br>Awarded in Calgary Bangladesh Football Community tournament. Led UCalgary Intramural team to finals. Represent BSS annually.</p>
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match">
+        <p>🏆 <strong>Man of the Match – CBFC League</strong><br>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament and won the tournament in 2024.</p>
       </div>
       <div class="card">
-        <img src="assets/VPInternal.png" alt="VP Internal" />
-        <p><strong>👔 VP – BSS UCalgary</strong><br>Led operations & featured in Internal Excellence recognition.</p>
+        <img src="assets/VPInternal.png" alt="VP Internal">
+        <p>📘 <strong>VP – BSS UCalgary</strong><br>BSS VP Internal Affairs 2024 – featured in Internal Excellence recognition.</p>
       </div>
     </div>
+
   </div>
 
   <footer>
     <p>© 2025 Aiman Chowdhury. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
