@@ -44,36 +44,28 @@
       padding: 0 20px;
       text-align: center;
     }
-    .right-highlight {
-      position: fixed;
-      right: 20px;
-      top: 160px;
-      width: 250px;
-      z-index: 10;
+    .extracurricular-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 2rem;
     }
-    .left-highlight {
-      position: fixed;
-      left: 20px;
-      top: 160px;
-      width: 250px;
-      z-index: 10;
-    }
-    .highlight img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 8px;
-    }
-    .highlight .card {
-      margin-bottom: 30px;
+    .extracurricular-images .card {
+      width: 280px;
+      margin: 10px;
       text-align: center;
       background-color: #fff;
-      box-shadow: 0 0 8px rgba(0,0,0,0.08);
-      border-radius: 10px;
       padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     }
-    .highlight p {
+    .extracurricular-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .extracurricular-images p {
       font-size: 13px;
-      margin: 0;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -120,25 +112,20 @@
         <li>📢 VP Internal – BSS UCalgary: internal logistics, event coordination, student support</li>
       </ul>
     </div>
-  </div>
 
-  <!-- Right Sidebar -->
-  <div class="right-highlight highlight">
-    <div class="card">
-      <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
-      <p><strong>🥇 Man of the Match – CBFC League</strong><br>Awarded in Calgary Bangladesh Football Community tournament. Led UCalgary Intramural team to finals. Represent BSS annually.</p>
-    </div>
-    <div class="card">
-      <img src="assets/VPInternal.png" alt="VP Internal BSS" />
-      <p><strong>👔 VP – BSS UCalgary</strong><br>Led operations & featured in Internal Excellence recognition.</p>
-    </div>
-  </div>
-
-  <!-- Left Sidebar -->
-  <div class="left-highlight highlight">
-    <div class="card">
-      <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket" />
-      <p><strong>🏏 Asia Cup Cricket 2024</strong><br>Represented Bengali Students Society at UCalgary. Jersey #33 sponsored by Shampan.</p>
+    <div class="extracurricular-images">
+      <div class="card">
+        <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
+        <p><strong>🥇 Man of the Match – CBFC League</strong><br>Awarded in CBFC tournament. Led UCalgary Intramural team to finals.</p>
+      </div>
+      <div class="card">
+        <img src="assets/VPInternal.png" alt="VP Internal" />
+        <p><strong>👔 VP Internal – BSS UCalgary</strong><br>Led BSS operations, featured in Internal Excellence recognition.</p>
+      </div>
+      <div class="card">
+        <img src="assets/BSS Cricket.png" alt="Asia Cup" />
+        <p><strong>🏏 Asia Cup Cricket</strong><br>Represented Bengali Students Society at UCalgary. Sponsored jersey.</p>
+      </div>
     </div>
   </div>
 
@@ -147,4 +134,3 @@
   </footer>
 </body>
 </html>
-
