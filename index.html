@@ -3,8 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aiman Nawar Chowdhury</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Aiman's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f2937;
+      color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: #2563eb;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 20px;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .content {
+      width: 55%;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,56 +97,58 @@
     <p>Natural Sciences @ UCalgary | Physics + CS | Portfolio</p>
   </header>
 
-  <div class="main-content">
-    <div class="cards-section">
+  <div class="container">
+    <!-- Left Sidebar (Man of the Match) -->
+    <div class="left-sidebar">
       <div class="card">
         <img src="assets/SoccerMotm.jpg" alt="Man of the Match" />
-        <p><strong>🥇 Man of the Match – CBFC League</strong><br>
-        Named Man of the Match at the Calgary Bangladesh Football Community Outdoor Tournament. Also won the same tournament in 2024.</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/VPInternal.png" alt="VP Internal" />
-        <p><strong>📘 Vice President of Internal Affairs</strong><br>
-        Led internal operations for the Bengali Students Society at UCalgary in 2024–25.</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/BSS Cricket.png" alt="Asia Cup Cricket Jersey" />
-        <p><strong>🏏 Asia Cup Cricket 2024</strong><br>
-        Collected Asia Cup jersey 2024 from sponsor Shampan.</p>
+        <p class="card-title">🥇 Man of the Match – CBFC League</p>
+        <p>Named Man of the Match at Calgary Bangladesh Football Community Outdoor tournament. Also won the same tournament in 2024.</p>
       </div>
     </div>
 
-    <div class="content-section">
-      <section>
-        <h2>📂 Projects</h2>
+    <!-- Main Content -->
+    <div class="content">
+      <h2>📂 Projects</h2>
+      <div>
+        <h3><a href="https://github.com/AimanChowdhury01/MyPassword" target="_blank">MyPassword – Encrypted Password Manager</a></h3>
+        <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving with AES. Fully functional through a terminal interface.</p>
+      </div>
+      <div>
+        <h3><a href="https://github.com/AimanChowdhury01/FinpalApp" target="_blank">FinPal – Personal Finance Manager</a></h3>
+        <p>A Java application to manage income, expenses, and budgeting. Built to support students and individuals with smart summaries. Fully functional through terminal after initial attempt to launch through GUI.</p>
+      </div>
 
-        <h3>MyPassword – Encrypted Password Manager</h3>
-        <p>A secure Java-based password manager featuring login, encrypted storage, password generation, and file-based credential saving using AES. Fully functional through a terminal interface.</p>
+      <h2>📄 Research Papers</h2>
+      <div>
+        <h3><a href="https://drive.google.com/file/d/17CnyARo1wyL6_1-kAUCR8StkWAXrkIVJ/view?usp=drive_link" target="_blank">🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</a></h3>
+        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Merged experimental data and theory for real-world particle physics insights. Used MATLAB and Excel for data analysis.</p>
+      </div>
+      <div>
+        <h3><a href="https://drive.google.com/drive/folders/1eLzz4A4j8kFoD0Z0vpih38Dr07ulcFNs?usp=drive_link" target="_blank">🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</a></h3>
+        <p>Used data visualization and regression in R to study how electric vehicle growth correlates with PM2.5 levels in Washington. Folder includes the final report, R scripts, and dataset. Manually collected data and performed ANOVA testing.</p>
+      </div>
 
-        <h3>FinPal – Personal Finance Manager</h3>
-        <p>A Java application used to manage income, expenses, and budgeting. Designed to support students and individuals with smart summaries. Fully functional via the terminal after an initial attempt to launch through the GUI.</p>
-      </section>
+      <h2>🏅 Extracurricular Activities</h2>
+      <ul>
+        <li>⚽ Regularly play soccer representing Bengali Students Society at UCalgary in soccer events hosted on campus. Also served as captain of the UCalgary intramural team that finished second in 2024.</li>
+        <li>🏏 Represent Bengali Students Society in Asia Cup Cricket tournament at UCalgary</li>
+        <li>📢 Vice President of Internal Affairs – BSS UCalgary: Led internal affairs for the Bengali Students Society at UCalgary, managing team coordination, organizing events, streamlining communication, and enhancing involvement across the student body.</li>
+      </ul>
+    </div>
 
-      <section>
-        <h2>📄 Research Papers</h2>
-
-        <h3>🚀 Cosmic Muon Deflection using Magnetic Fields – PDF</h3>
-        <p>Co-authored a Physics 397 paper using Arduino-based scintillators to detect and analyze muon deflection across magnetic fields. Combined experimental data and theoretical analysis to extract real-world particle physics insights. Used MATLAB and Excel for data processing.</p>
-
-        <h3>🌱 EV Adoption & Air Quality in Washington – Report, R Code & Excel</h3>
-        <p>Utilized data visualization and regression in R to study how electric vehicle adoption correlates with PM2.5 levels across Washington State. Included final report, R scripts, dataset, manual data collection, and ANOVA testing.</p>
-      </section>
-
-      <section>
-        <h2>🏅 Extracurricular Activities</h2>
-        <ul>
-          <li>⚽ Regularly play soccer representing the Bengali Students Society at UCalgary in university-hosted tournaments. Also served as captain of the UCalgary intramural team, which finished second in 2024.</li>
-          <li>🏏 Represent the Bengali Students Society in the Asia Cup Cricket tournament at UCalgary.</li>
-          <li>📢 Vice President of Internal Affairs – BSS UCalgary: Led internal operations for the Bengali Students Society in 2024–25, including team coordination, event planning, streamlining communication, and boosting student engagement.</li>
-        </ul>
-      </section>
+    <!-- Right Sidebar (VP & Asia Cup) -->
+    <div class="right-sidebar">
+      <div class="card">
+        <img src="assets/VPInternal.png" alt="VP Internal" />
+        <p class="card-title">📘 Vice President of Internal Affairs</p>
+        <p>Led internal operations for the Bengali Students Society at UCalgary in 2024–25.</p>
+      </div>
+      <div class="card">
+        <img src="assets/BSS Cricket.png" alt="Asia Cup Jersey" />
+        <p class="card-title">🏏 Asia Cup Cricket 2024</p>
+        <p>Collecting Asia Cup jersey 2024 from sponsor Shampan.</p>
+      </div>
     </div>
   </div>
 
